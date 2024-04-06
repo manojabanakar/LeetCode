@@ -1,0 +1,18 @@
+var minStartValue = function(nums) {    
+    let i = 1;
+    do {
+        let t = i;
+        var flg = false;
+        for(let j = 0; j < nums.length; j++){
+            t = t + nums[j];
+            if(t < 1){
+                flg = true;
+                break;
+            }
+        }
+        if(!flg){
+            return i;
+        }
+        i++;
+    } while(flg);
+};
