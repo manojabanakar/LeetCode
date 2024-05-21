@@ -1,0 +1,6 @@
+class Solution:
+    def checkIfPangram(self, s: str) -> bool:
+        return len(set(s))==26 
+
+
+# this is the power of the set, by using setwe can remove all the duplicates in the string. Which makes it easy get the unique character
